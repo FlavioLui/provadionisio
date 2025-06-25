@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu Livro</title>
+
+   <link rel="stylesheet" href="../bootstrap-icons-1.13.1">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../CSS/Flavio.css">
+</head>
+<body class="bg-light-page">
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo-principal shadow-sm menu">
+        <div class="container-fluid px-lg-5">
+
+            <div class="text-end">
+            <a class="navbar-brand"  data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas"><img src="../IMG/logos/LogoLivro (4).png" alt="" class="logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Acervo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sobrenos.html">sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leituraDoDia.html">Leitura do dia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Suporte.html">suporte</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-outline-light ms-lg-3 ">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="text-roxo-principal">Cadastre seu Livro </h1>
+        <p class="lead text-muted">Preencha os campos abaixo com o máximo de detalhes para encontrar a troca perfeita.</p>
+    </div>
+
+        <!-- validação do cadastro -->
+       <div id="alert-placeholder">
+    <div class="alert alert-success alert-dismissible d-none" role="alert" id="success-alert">
+       <div>Livro cadastrado com sucesso!</div>
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+        </div>
+
+    <div class="row g-5">
+        <div class="col-lg-8">
+            <form id="form-cadastro">
+                <h4 class="mb-3">Informações Principais</h4>
+                <div class="mb-3">
+                    <label for="tituloLivro" class="form-label">Título do Livro</label>
+                    <input type="text" class="form-control" id="tituloLivro" placeholder="Ex: Grande Sertão: Veredas" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="autorLivro" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="autorLivro" placeholder="Ex: João Guimarães Rosa" required>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Detalhes da Edição</h4>
+                <div class="row">
+                    <div class="col-md-8 mb-3">
+                        <label for="editoraLivro" class="form-label">Editora</label>
+                        <input type="text" class="form-control" id="editoraLivro" placeholder="Ex: Livraria José Olympio Editora" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="anoLivro" class="form-label">Ano de Publicação</label>
+                        <input type="number" class="form-control" id="anoLivro" placeholder="Ex: 1956" required>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Estado de Conservação</h4>
+                <div class="mb-3">
+                    <label for="condicaoLivro" class="form-label">Condição Geral</label>
+                    <select class="form-select" id="condicaoLivro" required>
+                        <option selected disabled value="">Selecione uma opção...</option>
+                        <option>Como Novo</option>
+                        <option>Excelente</option>
+                        <option>Bom (com marcas de uso)</option>
+                        <option>Razoável (com avarias)</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="detalhesCondicao" class="form-label">Notas Adicionais sobre a Condição</label>
+                    <textarea class="form-control" id="detalhesCondicao" rows="3" placeholder="Ex: Lombada com leve desgaste, páginas amareladas pela ação do tempo, sem anotações."></textarea>
+                </div>
+                
+                <hr class="my-4">
+
+                <h4 class="mb-3">Fotografias</h4>
+                <div class="mb-4">
+                    <label for="fotosLivro" class="form-label">Envie fotos do livro (capa, lombada, detalhes)</label>
+                    <input class="form-control" type="file" id="fotosLivro" multiple required>
+                </div>
+                
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-rosa-vibrante btn-lg" type="submit">Cadastrar Livro para Troca</button>
+            </form>
+        </div>
+
+        <!--  inicio card de dicas  -->
+
+        <div class="col-lg-4">
+            <div class="card card-dicas h-50">
+                <div class="card-header bg-roxo-principal text-white">
+                    <h5 class="my-0"><i class="bi bi-lightbulb-fill me-2"></i>Dicas para um Bom Anúncio</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-camera-fill text-roxo-principal me-2"></i>
+                            <strong>Fotos de qualidade</strong> fazem toda a diferença. Use luz natural e mostre os detalhes.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-card-text text-roxo-principal me-2"></i>
+                            <strong>Seja honesto</strong> na descrição do estado do livro para gerar confiança.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-search-heart text-roxo-principal me-2"></i>
+                            Se tiver interesse em alguma obra específica para a troca, mencione nas notas.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pequeno card de poemas puxados do array de objetos -->
+             <div class="card mt-4 card-poema">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-roxo-principal">Inspiração do Dia</h6>
+                    <blockquote class="blockquote mb-0" id="bloco-inspiracao">
+                        </blockquote>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- fim do card de dicas -->
+
+
+
+
+ <footer class="bg-roxo-principal text-white text-center py-4">
+
+      <div class="container d-flex align-items-center">
+
+      <div>
+        <img src="../IMG/logos/LogoLivro (4).png" alt="" class="logo">
+      </div>
+   
+      <div class=" text-end ms-auto">
+            <p class="mb-0">&copy; 2025 RareBook LTDA - Portal de Troca de Livros. Todos os direitos reservados.</p>
+            <p class="mb-0"><a href="#" class="text-white">Termos de Serviço</a> | <a href="#" class="text-white">Política de Privacidade</a></p>
+      </div>
+
+    </div>
+
+    </footer>
+
+     <!-- inicio offcanvas -->
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+  
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuOffcanvasLabel">RareBook</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="catalogo.html">Acervo de Livros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sobrenos.html">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Suporte.html">Suporte e FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastroLivro.html">Cadastrar um Livro</a>
+      </li>
+    </ul>
+    
+    <hr>
+    <div class="d-grid">
+        <a href="Suporte.html" class="btn btn-rosa-vibrante">Entre em Contato</a>
+    </div>
+
+  </div>
+</div>
+
+      <!-- fim offcanvas  -->
+
+    <script src="/JS/bootstrap.min.js"></script>
+    <script src="../DB/dados.js"></script>
+    <script src="../JS/cadastroLivro.js"></script>
+</body>
+</html>

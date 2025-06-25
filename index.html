@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Troca de Livros Raros</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="CSS/Flavio.css">
+   
+</head>
+<body class="body-home">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-roxo-principal shadow-sm menu">
+        <div class="container-fluid px-lg-5">
+
+            <div class="text-end">
+            <a class="navbar-brand"  data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas"><img src="IMG/logos/LogoLivro (4).png" alt="" class="logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pages/catalogo.html">Acervo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pages/Sobrenos.html">sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pages/leituraDoDia.html">Leitura do dia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pages/Suporte.html">suporte</a></li>
+                </ul>
+                <a href="Pages/login.html" class="btn btn-outline-light ms-lg-3 ">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class=" text-center " id="header-fundo">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4" id="cor-fonte-header">Onde a história encontra um novo leitor</h1>
+                    <p class="lead mt-3 mb-4" id="cor-fonte-header">A comunidade definitiva para colecionadores trocarem com segurança livros raros, primeiras edições e obras valiosas.</p>
+                    <a href="Pages/catalogo.html" class="btn btn-lg btn-rosa-vibrante">Explore o Acervo Agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2>Simples, Rápido e Seguro</h2>
+                    <p class="lead text-muted">Troque seus livros em 4 passos fáceis.</p>
+                </div>
+                
+                <div class="row text-center">
+
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-person-circle icon mb-3"></i>
+                        <h4 class="fs-5">1. Cadastre-se</h4>
+                        <p>Crie seu perfil de colecionador em minutos.</p>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-cloud-arrow-up-fill icon mb-3"></i>
+                        <h4 class="fs-5">2. Anuncie</h4>
+                        <p>Adicione os livros que você deseja trocar.</p>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-search-heart icon mb-3"></i>
+                        <h4 class="fs-5">3. Encontre</h4>
+                        <p>Navegue no acervo e descubra novas relíquias.</p>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-send-check-fill icon mb-3"></i>
+                        <h4 class="fs-5">4. Troque</h4>
+                        <p>Conecte-se com outros membros e combine a troca.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light mx-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Destaques do Acervo</h2>
+                    <p class="lead text-muted">Raridades recém-adicionadas por nossos membros.</p>
+                </div>
+
+
+                   <!-- inicio dos cards -->
+            <div class="row" id="livros-destaque-container">
+          </div>
+                      <!-- fim dos cards -->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 text-center">
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5">Pronto para encontrar sua próxima relíquia?</h2>
+                        <p class="lead mt-3 mb-4">Cadastre seu livro gratuitamente e junte-se a uma comunidade de apaixonados por livros.</p>
+                        <a href="Pages/cadastroLivro.html" class="btn btn-lg btn-rosa-vibrante">Cadastre seu Livro</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-roxo-principal text-white text-center py-4">
+
+      <div class="container d-flex align-items-center">
+
+      <div>
+        <img src="IMG/logos/LogoLivro (4).png" alt="" class="logo">
+      </div>
+   
+      <div class=" text-end ms-auto">
+            <p class="mb-0">&copy; 2025 RareBook LTDA - Portal de Troca de Livros. Todos os direitos reservados.</p>
+            <p class="mb-0"><a href="#" class="text-white">Termos de Serviço</a> | <a href="#" class="text-white">Política de Privacidade</a></p>
+      </div>
+
+    </div>
+
+    </footer>
+
+
+
+    <!-- inicio modais -->
+            <div id="modals-container"></div>
+     <!-- fim modal -->
+
+     <!-- inicio offcanvas -->
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+  
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuOffcanvasLabel">RareBook</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Pages/catalogo.html">Acervo de Livros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Pages/Sobrenos.html">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Pages/Suporte.html">Suporte e FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Pages/cadastroLivro.html">Cadastrar um Livro</a>
+      </li>
+    </ul>
+    
+    <hr>
+    <div class="d-grid">
+        <a href="Pages/Suporte.html" class="btn btn-rosa-vibrante">Entre em Contato</a>
+    </div>
+
+  </div>
+</div>
+
+      <!-- fim offcanvas  -->
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="DB/dados.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+</html>

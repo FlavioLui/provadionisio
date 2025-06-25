@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/Vinicius.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        p.limitelinhas {
+            display: -webkit-box;
+            -webkit-line-lamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-roxo-principal shadow-sm menu">
+        <div class="container-fluid px-lg-5">
+
+            <div class="text-end">
+            <a class="navbar-brand"  data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas"><img src="/IMG/logos/LogoLivro (4).png" alt="logotiporarebook" class="logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item "><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item "><a class="nav-link active" href="catalogo.html">Acervo</a></li>
+                    <li class="nav-item "><a class="nav-link" href="Sobrenos.html">Sobre Nós</a></li>
+                    <li class="nav-item "><a class="nav-link" href="leituraDoDia.html">Leitura do dia</a></li>
+                    <li class="nav-item "><a class="nav-link" href="Suporte.html">Suporte</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-outline-light ms-lg-3 ">Login</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0 mt-3">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-danger">
+                                Buscar
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 mt-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar por quantidade disponível</option>
+                                <option>Ordenar por gênero</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0 mt-3">
+                                <li class="page-item">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item disabled">
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">6</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                             
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html">
+                                    Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                               
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                    Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas  d-flex flex-column">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                    Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas  ">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                    Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" > 
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Livro</h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Livro</h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch py-2">
+                    <div class="card text-center bg-light poema-card">
+            
+                        <!-- infos do livro-->
+                        <img src="/IMG/imgs/livro_placeholder.jpg" alt="livro" class="card-img-top">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text limitelinhas">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <a class="btn btn-danger" href="login.html" >
+                                   Quero trocar
+                                </a>
+                            </form>
+                            <small class="text-success">2 Unidades disponíveis</small>
+
+                        </div>
+                    </div>
+                </div>
+               
+                
+                
+                
+            </div>
+            <hr class="mt-3">
+            <div class="row pb-4">
+                <div class="cow-12">
+
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+
+    <footer class="bg-roxo-principal text-white text-center py-4">
+
+      <div class="container d-flex align-items-center">
+
+      <div>
+        <img src="../IMG/logos/LogoLivro (4).png" alt="" class="logo">
+      </div>
+   
+      <div class=" text-end ms-auto">
+            <p class="mb-0">&copy; 2025 RareBook LTDA - Portal de Troca de Livros. Todos os direitos reservados.</p>
+            <p class="mb-0"><a href="#" class="text-white">Termos de Serviço</a> | <a href="#" class="text-white">Política de Privacidade</a></p>
+      </div>
+
+    </div>
+
+    </footer>
+
+   
+ <!-- inicio offcanvas -->
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+  
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuOffcanvasLabel">RareBook</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="catalogo.html">Acervo de Livros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sobrenos.html">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Suporte.html">Suporte e FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastroLivro.html">Cadastrar um Livro</a>
+      </li>
+    </ul>
+    
+    <hr>
+    <div class="d-grid">
+        <a href="Suporte.html" class="btn btn-cor ">Entre em Contato</a>
+    </div>
+
+  </div>
+</div>
+
+      <!-- fim offcanvas  -->
+
+
+    <script src="/JS/bootstrap.min.js"></script>
+    <script src="../DB/dados.js"></script>
+    <script src="../JS/vinicius.js"></script>
+</body>
+</html>

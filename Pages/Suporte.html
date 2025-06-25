@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+
+     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../CSS/Flavio.css">
+
+</head>
+<body class="body-suporte">
+    
+    <!-- inicio menu -->
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo-principal shadow-sm menu">
+        <div class="container-fluid px-lg-5">
+
+            <div class="text-end">
+            <a class="navbar-brand"  data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas"><img src="../IMG/logos/LogoLivro (4).png" alt="" class="logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Acervo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sobrenos.html">sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leituraDoDia.html">Leitura do dia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Suporte.html">suporte</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-outline-light ms-lg-3 ">Login</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- fim menu  -->
+
+     <!-- inicio header  -->
+     <header class="bg-roxo-principal text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Central de Ajuda</h1>
+        <p class="lead">Tem alguma dúvida? Encontre aqui as respostas para as perguntas mais frequentes.</p>
+    </div>
+</header>
+    <!-- fim header  -->
+
+    <!-- inicio main  -->
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h2 class="text-center mb-4">Perguntas Frequentes (FAQ)</h2>
+
+            <div class="accordion" id="faqAccordion">
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Como funciona o processo de troca?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <strong>É simples!</strong> Primeiro, você cadastra o livro que deseja trocar. Depois, navega pelo nosso acervo para encontrar um livro do seu interesse. Ao encontrar, você pode iniciar uma proposta de troca com o outro usuário. Se ambos concordarem, combinam os detalhes de envio de forma privada e segura.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Como devo avaliar a condição do meu livro?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Seja o mais honesto e detalhista possível. Use as categorias (Como Novo, Bom, Razoável) e o campo de notas para descrever qualquer detalhe: páginas amareladas, desgastes na lombada, anotações, etc. Boas fotos também são essenciais para que o outro colecionador saiba exatamente o que está trocando.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            O portal RareBook cobra alguma taxa pela troca?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Não. O cadastro e a troca de livros na nossa plataforma são totalmente gratuitos. Nosso objetivo é fomentar a comunidade de colecionadores. Os únicos custos envolvidos são os de envio, que são combinados diretamente entre os usuários que estão realizando a troca.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+
+            <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <div class="text-center mb-3">
+                            <h2 class="text-roxo-principal">Ainda com Dúvidas?</h2>
+                            <p class="lead text-muted">Se não encontrou sua resposta na FAQ, envie-nos uma mensagem. Nossa equipe terá prazer em ajudar.</p>
+                        </div>
+
+                        <form id="formContato">
+                            <div class="mb-3">
+                                <label for="nomeContato" class="form-label">Seu Nome Completo</label>
+                                <input type="text" class="form-control" id="nomeContato" placeholder="João da Silva" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailContato" class="form-label">Seu E-mail</label>
+                                <input type="email" class="form-control" id="emailContato" placeholder="voce@exemplo.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assuntoContato" class="form-label">Assunto</label>
+                                <select class="form-select" id="assuntoContato" required>
+                                    <option selected disabled value="">Selecione um assunto...</option>
+                                    <option>Dúvida sobre uma troca</option>
+                                    <option>Problema técnico no site</option>
+                                    <option>Sugestão de melhoria</option>
+                                    <option>Parcerias</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensagemContato" class="form-label">Sua Mensagem</label>
+                                <textarea class="form-control" id="mensagemContato" rows="5" placeholder="Digite sua dúvida ou sugestão aqui..." required></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-rosa-vibrante btn-lg">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                        </div>
+                </div>
+            </div>
+            </section>
+    </div>
+
+    </main>
+
+<!-- fim main  -->
+
+<!-- inicio rodapé -->
+
+<footer class="bg-roxo-principal text-white text-center py-4">
+
+      <div class="container d-flex align-items-center">
+
+      <div>
+        <img src="../IMG/logos/LogoLivro (4).png" alt="" class="logo">
+      </div>
+   
+      <div class=" text-end ms-auto">
+            <p class="mb-0">&copy; 2025 RareBook LTDA - Portal de Troca de Livros. Todos os direitos reservados.</p>
+            <p class="mb-0"><a href="#" class="text-white">Termos de Serviço</a> | <a href="#" class="text-white">Política de Privacidade</a></p>
+      </div>
+
+    </div>
+
+    </footer>
+
+ <!-- fim rodapé -->
+ <!-- inicio offcanvas -->
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+  
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuOffcanvasLabel">RareBook</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="catalogo.html">Acervo de Livros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sobrenos.html">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Suporte.html">Suporte e FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastroLivro.html">Cadastrar um Livro</a>
+      </li>
+    </ul>
+    
+    <hr>
+    <div class="d-grid">
+        <a href="Suporte.html" class="btn btn-rosa-vibrante">Entre em Contato</a>
+    </div>
+
+  </div>
+</div>
+
+      <!-- fim offcanvas  -->
+
+   <script src="../JS/bootstrap.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+--cor-roxo-principal: #6420AA;
+--cor-rosa-vibrante: #FF3EA5;
+--cor-rosa-medio: #FF7ED4;
+--cor-rosa-claro: #FFB5DA;
+--cor-texto-escuro: #333;
+--cor-branco: #fff;
+}
+
+/* Declarando a fonte Lato que está na sua pasta local */
+        @font-face {
+        font-family: 'Lato'; 
+        src: url('../fonts/Lato-Regular.ttf') format('truetype'); 
+        font-weight: 400;
+        }
+
+/* Declarando a fonte Playfair Display que está na sua pasta local */
+        @font-face {
+        font-family: 'Playfair Display';
+        src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+        font-weight: 700;
+        }
+
+        .login-fonte{
+             font-family: 'Playfair Display'
+        }
+
+.form-container {
+    max-width: 400px;
+    padding: 2rem;
+}
+.text-rosa-forte {
+  color: var(--cor-rosa-vibrante);
+}
+.text-rosa {
+  color: var(--cor-rosa-medio)
+}
+.text-roxo {
+    color: var(--cor-roxo-principal);
+  }
+.text-rosinha {
+    color: var(--cor-rosa-claro);
+}
+.custom-button {
+  background-color: var(--cor-roxo-principal);
+  border: none;
+}
+
+.custom-button:hover {
+  background-color: #4e1987; 
+}
+body {
+  background-color: var(--cor-rosa-claro);
+}
+.bg-roxo-principal {
+  background-color: var(--cor-roxo-principal);
+  }
+.bg-rosa-claro {
+  background-color: var(--cor-rosa-claro);
+  }
+.logo{
+height:4rem;
+            
+  }
+#carouselBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+/* Overlay escuro opcional para melhorar contraste do texto */
+#carouselBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* escurece as imagens */
+  z-index: 1;
+}
+nav.navbar {
+  position: relative;
+  z-index: 3;
+}
+.quote-box {
+  max-width: 500px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* melhora contraste em fundos claros */
+}
+
+@media (max-width: 991px) {
+  /* Esconde a citação em telas pequenas (opcional) */
+  .quote-box {
+    display: none;
+  }
+}
+
+/* Edições offCanvas */
+
+.offcanvas {
+    background-color: var(--cor-roxo-principal);
+}
+
+.offcanvas-body .nav-link {
+    font-size: 1.1rem; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: var(--cor-branco);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #fff;
+    background-color: var(--cor-roxo-principal);
+    border-radius: 0.25rem;
+}
+
+.btn-cor{
+  background-color: var(--cor-rosa-vibrante);
+  color: var(--cor-branco);
+}

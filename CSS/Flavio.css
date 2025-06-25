@@ -1,0 +1,202 @@
+       /*   paleta de cores   */
+        :root {
+            --cor-roxo-principal: #6420AA;
+            --cor-rosa-vibrante: #FF3EA5;
+            --cor-rosa-medio: #FF7ED4;
+            --cor-rosa-claro: #FFB5DA;
+            --cor-texto-escuro: #333;
+            --cor-branco: #fff;
+        }
+
+/* Declarando a fonte Lato que está na sua pasta local */
+        @font-face {
+        font-family: 'Lato'; 
+        src: url('../fonts/Lato-Regular.ttf') format('truetype'); 
+        font-weight: 400;
+        }
+
+/* Declarando a fonte Playfair Display que está na sua pasta local */
+        @font-face {
+        font-family: 'Playfair Display';
+        src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+        font-weight: 700;
+        }
+
+
+        /* Aplicando fontes e cores base */
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--cor-texto-escuro);
+        }
+
+        #cor-fonte-header{
+            color: var(--cor-rosa-claro);
+         
+        }
+        
+        
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* gradient do header */
+
+        .header-com-fundo {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+            var(--bg-image-url);
+
+            /* ajustes img do header */
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+        }
+
+        
+        /* Classes personalizadas para cores de fundo */
+        .bg-roxo-principal {
+            background-color: var(--cor-roxo-principal);
+        }
+        .bg-rosa-claro {
+            background-color: var(--cor-rosa-claro);
+        }
+
+        /* Estilos para botões personalizados */
+        .btn-rosa-vibrante {
+            background-color: var(--cor-rosa-vibrante);
+            border-color: var(--cor-rosa-vibrante);
+            color: var(--cor-branco);
+            font-weight: bold;
+            padding: 12px 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-rosa-vibrante:hover {
+            background-color: var(--cor-rosa-medio);
+            border-color: var(--cor-rosa-medio);
+            color: var(--cor-branco);
+        }
+
+        /* Estilizando ícones da seção "Como Funciona" */
+        .icon {
+            font-size: 3rem; 
+            color: var(--cor-roxo-principal);
+        }
+
+        /* Ajustes nos cards */
+        .card-livro {
+            border: 1px solid #eee;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-livro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Ajuste logo */
+
+        .logo{
+            height:4rem;
+            
+        }
+
+        .body-home{
+            background-color: var(--cor-rosa-claro);
+        }    
+
+
+/*
+ *           PÁGINA DE CADASTRO
+ * =========================================
+*/
+
+/* Define um fundo cinza claro para páginas internas */
+body.bg-light-page {
+    background-color: #f8f9fa;
+}
+
+/* labels dos formulários para dar mais destaque e legibilidade. */
+.form-label {
+    font-weight: 600; 
+    color:  #495057;  
+}
+
+/*  borda card de dicas */
+.card-dicas {
+    border: 1px solid var(--cor-rosa-medio);
+    background-color: var(--cor-rosa-claro);
+}
+     
+.card-poema, h6{
+    background-color: var(--cor-rosa-claro);
+    font-family: 'Playfair Display';
+}
+      
+
+
+/*
+
+             PÁGINA QUEM SOMOS
+ * =========================================
+*/
+
+/* Estilo para os ícones grandes da seção 'Nossos Valores' */
+.valor-icon {
+    font-size: 3rem; 
+    color: var(--cor-roxo-principal); 
+}
+
+
+
+/*
+             PÁGINA SUPORTE
+  =========================================
+*/
+
+
+.body-suporte{
+    background-color: var(--cor-rosa-claro);
+}
+
+/* Modificações do accordion  */
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid var(--cor-roxo-principal);
+}
+
+
+.accordion-button {
+    color: var(--cor-roxo-principal);
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(100, 32, 170, 0.25); 
+}
+
+/* Estiliza o botão quando o acordeon está aberto */
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: var(--cor-roxo-principal);
+}
+
+
+
+/* Edições offCanvas */
+
+.offcanvas {
+    background-color: var(--cor-roxo-principal);
+}
+
+.offcanvas-body .nav-link {
+    font-size: 1.1rem; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: var(--cor-branco);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #fff;
+    background-color: var(--cor-roxo-principal);
+    border-radius: 0.25rem;
+}
